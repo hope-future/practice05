@@ -1,0 +1,57 @@
+{
+  "name": "practice05",
+  "version": "1.0.0",
+  "description": "CSSグリッドで作成",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CASUAL",
+    "カジュアル",
+    "ご案内"
+  ],
+  "author": "山田 太郎",
+  "license": "ISC",
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions",
+    "ie 11"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "browser-sync": "^2.26.14",
+    "cssnano": "^4.1.10",
+    "csswring": "^7.0.0",
+    "del": "^6.0.0",
+    "fibers": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-ejs": "^5.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "postcss": "^8.2.6",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "sass": "^1.32.7"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1",
+    "reset.css": "^2.0.2",
+    "ress": "^3.0.0",
+    "sanitize.css": "^12.0.1"
+  }
+}

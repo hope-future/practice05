@@ -1,0 +1,660 @@
+🟡 コマンド
+
+touch パス ファイル名
+
+
+
+mkdir パス ディレクトリ名
+
+make directory
+
+
+
+cd パス
+
+change directory
+
+
+
+ls
+ls -all
+
+list
+
+
+
+pwd
+
+print working directory
+
+
+
+rm パス ファイル名
+
+remove
+
+
+
+rmdir パス 空のディレクトリ名
+
+remove directory
+
+
+
+rm -r 中身があるディレクトリ名
+
+remove recursive
+
+リカーシブ
+recursive・・・・再帰的な。
+
+
+
+mv 移動前のパス 移動後のパス
+
+move
+
+
+cp コピー元のパス コピー先のパス
+
+copy
+
+
+
+clear
+
+
+
+history
+
+
+
+
+🟡 ディレクトリ名、ファイル名
+
+🟢 ディレクトリ名
+
+.node_modules
+
+dist
+
+ディストリビューション
+distribution
+配布
+
+ディストリクト
+district
+地区
+
+src
+
+.git
+
+
+🟢 ファイル名
+
+.DS_Store
+Thumbs.db
+package-lock.json
+practice05.code-workspace
+
+package.json
+gulpfile.js
+.gitignore
+.node-version
+.editorconfig
+csscomb.json
+eslintrc.js
+prettierrc
+README.md
+
+エディタコンフィグ
+EditorConfig
+
+プリティア
+Prettier
+
+シーエスエスコーム
+CSSComb
+
+
+
+🟡
+パッケージマネージャ
+パッケージ管理システム
+パッケージ管理ツール
+
+
+🟢 macOS
+
+ホームブルー
+ホームブリュー
+Homebrew
+
+brew
+
+
+brew update
+
+brew upgrade
+
+
+
+🟢 Windows
+
+チョコレティ
+Chocolatey
+
+choco
+
+
+
+
+🟡 Node.js バージョン管理ツール
+
+🟢 macOS
+
+anyenv
+
+スーパーセット
+superset
+
+
+nodenv
+
+サブセット
+subset
+
+全体に対する一部分。
+
+
+nodenv version
+
+nodenv versions
+
+node -v
+
+nodenv install -l --list
+
+nodenv install バージョン
+
+nodenv uninstall バージョン
+
+nodenv global バージョン
+
+nodenv local バージョン
+
+
+
+🟢 Windows
+
+nodist
+
+nodist
+
+
+
+node
+
+node --version
+node -v
+
+.exit
+
+エグジット
+exit
+抜け出る、出口、終了する。
+
+
+
+
+🟡 エスケープシーケンス
+
+\t
+  タブ。
+
+\n
+  改行。
+
+\"
+  ダブルクォーテーション。
+
+\'
+  シングルクォーテーション。
+
+\\
+  バックスラッシュ。
+
+
+
+🟡
+
+ツール
+tool・・・・道具、手段。
+
+
+
+priceBox
+
+ctaArea
+
+CTA
+Call To Action
+行動喚起
+
+btnGroup
+
+priceUnit
+
+cardUnit
+
+ユニット
+unit・・・・構成単位、単位。
+
+
+
+
+🟡 リント
+
+リント
+lint・・・・糸くず。
+
+
+HTMLHint
+
+
+stylelint
+
+stylelint
+
+
+ESLint
+
+eslint
+
+
+エクマスクリプト
+ECMAScript
+
+
+
+
+🟡
+
+プリティア
+Prettier
+
+prettier
+
+
+
+
+🟡 package.json
+
+browserslist
+
+
+
+
+🟡
+
+npm
+
+node package manager
+
+yarn
+
+
+
+🟢 コマンド
+
+npm install --save-dev --global autoprefixer gulp
+    i       -D         -g
+
+npm install --save --global autoprefixer gulp
+            -S
+
+devDependencies
+
+dependencies
+
+ディペンデンシー
+dependency・・・・依存状態。
+
+
+
+npm init -y
+
+
+
+npm install --global gulp-cli
+
+
+
+npm init -y
+
+
+npm
+
+Node Package Manager
+
+yarn
+
+
+
+devDependencies
+
+ディペンデンシー
+dependency
+依存状態
+
+npm install --save-dev --global autoprefixer
+
+npm i -D -g autoprefixer gulp
+
+
+dependencies
+
+npm install --save autoprefixer
+
+-S
+
+npm install --global gulp-cli
+
+
+リング
+ring
+輪、指輪、リング。
+
+
+リング
+wring
+絞る。
+
+
+プラマー
+plumber
+plumber
+配管工。
+
+
+
+npm-check-updates
+
+ncu
+
+ncu -u
+
+
+
+eslintrc.js
+
+エクステンド
+extend
+広げる、伸ばす、拡張する。
+
+エクステンション
+extension
+拡張。
+
+
+
+
+🟡 gulpfile.js
+
+Nested
+
+Expanded
+
+Compact
+
+Compressed
+
+/*!  */
+
+
+
+
+バー
+var
+関数スコープ
+
+
+レット
+let
+ブロックスコープ
+
+
+コンスト
+const
+ブロックスコープ
+
+コンスタント
+constant
+定数、一定の、不変の。
+
+
+
+デスティネーション
+destination
+目的地、宛先。
+
+
+
+
+プライベートタスク
+private task
+
+
+パブリックタスク
+public task
+
+
+
+エクスポート
+export
+輸出する、輸出。
+
+
+インポート
+import
+輸入する、輸入。
+
+
+
+exports.ejsCompile = ejsCompile;
+
+exports.default = gulp.series(server, watch);
+
+
+series()
+同期
+
+parallel()
+非同期
+
+
+シリーズ
+series
+連続。
+
+
+パラレル
+parallel
+並行の、平行の。
+
+
+
+
+🟡 略語
+
+LGTM
+
+Looks Good To Me
+
+よさそうに見えます。
+
+
+
+[WIP]タイトル
+
+Work In Progress
+
+作業中。
+
+プログレス
+progress
+しんちょく
+進捗、進み具合。
+
+
+
+IMO
+
+In My Opinion
+
+私が思うに、
+
+
+
+IMHO
+
+In My Honest Opinion
+
+率直に言うと。
+
+オネスト
+honest
+正直な、率直な。
+
+
+
+IMHO
+
+In My Humble Opinion
+
+つまらない意見ですが、
+
+ハンブル
+humble
+控えめな、謙虚な。
+
+
+Nitpick
+NITS
+
+nitpick
+あらさがしをする。
+
+
+
+マスト
+MUST
+助動詞
+〜しなければならない。
+
+
+
+シュッド
+SHOULD
+〜しなければならない。
+
+must > should
+
+
+
+FYI
+
+For Your Information
+
+参考までに。
+
+
+
+ハンブル
+humble
+控えめな、謙虚な。
+
+つまらない意見ですが、
+
+
+
+Nitpick
+NITS
+
+
+nitpick
+粗探しをする。
+
+
+
+FYI
+
+For Your Information
+
+参考までに。
+
+
+
+
+🟡 絵文字
+
+エモティ
+Emoty
+
+エモティコン
+emoticon
+
+:+1:
+いいね！
+
+:shipit:
+いいね！
+
+
+:shipit:
+
+:shipit:
+
+:shipit:
+
+
+:clap:
+いいね！
+
+クラップ
+clap
+手を叩く、拍手する。
+
+
+
+
+🟢 LTTM
+
+!d
+!i
+!j
+!m
+!n
+!r
+!s
+
+
+
+
+エメット
+Emmet
+
+!
+html:5
+
+
+
+
+
+HTMLテンプレートエンジン
+
+イージェイエス
+EJS
+
+Embedded JavaScript

@@ -1,0 +1,10 @@
+# ディレクトリ・フォルダー
+node_modules
+dist
+
+
+# ファイル
+.DS_Store
+Thumbs.db
+package-lock.json
+practice05.code-workspace
