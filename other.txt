@@ -658,3 +658,42 @@ HTMLテンプレートエンジン
 EJS
 
 Embedded JavaScript
+
+
+
+
+パグ
+Pug
+
+ジェイド
+Jade
+
+
+
+settings.json
+
+settings.json
+
+
+
+
+アイコンフォント
+
+Font Awesome
+
+IcoMoon
+
+Google Material Icons
+
+マテリアル
+material
+素材、材料。
+
+
+Remix Icon
+
+Remix Icon
+
+Google Material Icons
+
+Remix Icon

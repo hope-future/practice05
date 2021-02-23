@@ -1,0 +1,24 @@
+<%
+  if (typeof pageGridItem === 'undefined') {
+    pageGridItem = '';
+  }
+%>
+
+<footer class="<%= pageGridItem %>footer">
+  <div class="footer__site">
+    <div class="footer__siteName en">CASUAL</div>
+
+    <address class="footer__address">
+      〒901-3125<br>
+      沖縄県島尻郡久米島町字鳥島グスク<br>
+      0997-1234-5678
+    </address>
+  </div><!-- /.footer__site -->
+
+  <div class="footer__chat">
+    <a class="footer__chatLink en" href="#">
+      <img class="footer__chatImage" src="images/chat.svg" alt=""><br>
+      Chat Support
+    </a>
+  </div><!-- /.footer__chat -->
+</footer>

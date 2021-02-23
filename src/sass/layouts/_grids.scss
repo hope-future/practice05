@@ -1,0 +1,103 @@
+// グリッドレイアウト
+
+@use "../global" as g;
+
+
+// ページのグリッドレイアウト
+.pageGrid {
+  display: grid;
+  grid-template-columns:
+    72px auto 72px;
+  grid-template-rows:
+    72px
+    auto
+    auto
+    auto;
+
+  &__gNavBtn {
+    grid-column: -2;
+    z-index: 1;
+  }
+
+  &__catch {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    margin-top: 257px;
+    margin-left: 10px;
+  }
+
+  &__sns {
+    grid-column: -2;
+    grid-row: 2;
+    justify-self: end;
+    margin-top: 187px;
+    margin-right: 10px;
+  }
+
+
+
+  // トップページ
+  &__heroHeader {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  &__main {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+
+
+  // コンテンツページ・ここから
+  &__hero {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: 33px;
+  }
+
+  &__guideArticle {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  &__footer {
+    grid-column: 1 / -1;
+    grid-row: -2;
+  }
+
+
+  @include g.mq(md-min) {
+    &__catch {
+      justify-self: center;
+      margin-left: 0;
+    }
+
+    &__sns {
+      justify-self: center;
+      margin-right: 0;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      grid-column: 1;
+      grid-row: 2 / 4;
+      justify-self: center;
+      margin-top: 660px;
+      background-color: g.$mainColor;
+    }
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+
+    &::after {
+      width: 1px;
+      min-height: 200px;
+    }
+  }
+}

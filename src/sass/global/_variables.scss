@@ -1,0 +1,21 @@
+// 変数
+
+
+// カラー
+$mainColor: #98A718;
+$grayColor: #AAAAAA;
+$blackColor: #000000;
+$whiteColor: #FFFFFF;
+
+
+// ブレイクポイント
+$breakpoints: (
+  'sm-min': '(min-width: 375px)',
+  'sm-max': '(max-width: 374px)',
+  'md-min': '(min-width: 768px)',
+  'md-max': '(max-width: 767px)',
+  'lg-min': '(min-width: 1218px)',
+  'lg-max': '(max-width: 1217px)',
+  'xl-min': '(min-width: 1366px)',
+  'xl-max': '(max-width: 1365px)'
+);

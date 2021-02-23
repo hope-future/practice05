@@ -1,3 +1,41 @@
-.test {
-  color: royalblue;
-}
+// ベース
+@use "bases/_bases.scss";
+
+
+
+// グリッドレイアウト
+@use "layouts/grids";
+
+
+// パーツ
+// キャッチコピー
+@use "components/parts/catch";
+// 詳しく見る
+@use "components/parts/more";
+
+
+
+// コンポーネント・共通
+// グローバルナビゲーション
+@use "components/common/_gnav.scss";
+// フッター
+@use "components/common/footer";
+// SNS
+@use "components/common/sns";
+
+
+
+// コンポーネント・その他
+// ヒーローヘッダー
+@use "components/other/hero-headers/hero-header";
+// ヒーローイメージ
+@use "components/other/heroes/_hero.scss";
+// 記事・ご案内
+@use "components/other/articles/guideArticle";
+// メディア・メッセージ
+@use "components/other/media/_message-media.scss";
+
+
+
+// 汎用クラス・utilityクラス・ユーティリティクラス・ヘルパークラス
+@use "utilities/helpers";

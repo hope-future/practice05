@@ -1,0 +1,47 @@
+<%
+  if (typeof page_title === 'undefined') {
+    var page_title = '';
+  }
+
+  if (typeof data === 'undefined') {
+    var data = {
+      head: 'default',
+      body: 'default'
+    }
+  }
+%>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>
+    <% if (page_title) { %>
+      <%= page_title %> | CASUAL
+    <% } else { %>
+      CASUAL
+    <% } %>
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="<%= description %>">
+  <meta name="author" content="<%- author %>">
+  <meta name="copyright" content="<%= copyright %>">
+  <meta name="application-name" content="<%= application_name %>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.12/swiper-bundle.min.css' integrity='sha512-54m0gHkv2N+4ufVhtqNFYMWsUqZVivwVs6suuFiRx4GHGr6ouqgF7nNcxl65N/RysWqhwtJY0Pqz7jweSS/U4A==' crossorigin='anonymous'/>
+
+  <!-- slick -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css' integrity='sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==' crossorigin='anonymous'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css' integrity='sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==' crossorigin='anonymous'/>
+
+  <!-- Bootstrap 4 -->
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css' integrity='sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==' crossorigin='anonymous'/> -->
+
+  <link rel="stylesheet" type="text/css" href="css/master.css">
+</head>

@@ -1,0 +1,10 @@
+// パーツ・詳しく見る
+
+@use "../../global/index" as g;
+
+
+.more {
+  font-weight: 700;
+  line-height: 1.8;
+  color: g.$mainColor;
+}

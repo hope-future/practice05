@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('components/common/_head.ejs', {page_title: 'ご案内'}) %>
+
+
+<body class="content pageGrid">
+
+<%- include('components/common/_gnav', {pageGridItem: 'pageGrid__gNavBtn '}) %>
+
+<%- include('components/other/_hero.ejs', {pageGridItem: 'pageGrid__hero '}) %>
+
+
+<article class="pageGrid__guideArticle guideArticle">
+  <h1 class="guideArticle__heading">ご案内</h1>
+
+  <p class="guideArticle__text">2001年にオンライン専門のキャンプサイトとしてオープンして以来、CASUALは独自の情報発信を行うアウトドア系メディアおよびポータルとしてご好評をいただいております。本サイトを通してアウトドアをより身近に感じていただければ幸いです。</p>
+
+  <p class="guideArticle__text">数年前にはマイナーだったキャンプも、キャンプをテーマとしたYouTubeの動画配信やコミックの人気もあり、とても身近なものになっています。</p>
+
+  <div class="guideArticle__gallery">
+    <figure class="guideArticle__figureA">
+      <img class="guideArticle__image"
+        srcset="images/camp-food511.png 511w,
+                images/camp-food1022.png 1022w,
+                images/camp-food1533.png 1533w"
+
+        sizes="(min-width: 1004px) 511px,
+               (min-width: 768px) 51vw"
+
+        src="images/camp-food.jpg"
+        alt="写真：バーベキューの食材">
+    </figure>
+
+    <figure class="guideArticle__figureB">
+      <img class="guideArticle__image" src="images/camp-sky.jpg" alt="写真：青空の太陽の下のテント">
+    </figure>
+
+    <figure class="guideArticle__figureC">
+      <img class="guideArticle__image" src="images/camp-fire.jpg" alt="写真：焚き火">
+    </figure>
+
+    <figure class="guideArticle__figureD">
+      <img class="guideArticle__image" src="images/camp-table.jpg" alt="写真：キャップ用の食卓テーブル">
+    </figure>
+  </div><!-- /.guideArticle_-gallery -->
+
+  <p class="guideArticle__text">大勢で楽しむキャンプはもちろんのこと、ひとりで楽しむソロキャンプも人気です。気軽に行けるキャンプサイトや、手軽でかさばらない道具類、簡単に設営できるテントなど、アウトドアをサポートするもろもろが進化しているのも大きいと言えるでしょう。
+  </p>
+
+  <p class="guideArticle__text">すべてを賄ってくれる「グランピング」という選択肢もあります。自分で食材を用意せず、出来合いのお惣菜やお弁当を持ち込んで自然を満喫するのも一興です。いろいろな楽しみ方、自分に合ったスタイルを見つけてみてください。</p>
+</article>
+
+
+<%- include('components/common/_catch', {pageGridItem: 'pageGrid__catch '}) %>
+
+<%- include('components/common/_sns.ejs', {pageGridItem: 'pageGrid__sns '}) %>
+
+<%- include('components/common/_footer', {pageGridItem: 'pageGrid__footer '}) %>
+
+<%- include('components/common/_script.ejs') %>
+
+</body>
+</html>

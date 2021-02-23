@@ -1,0 +1,11 @@
+// SNS
+
+@use "../../global" as g;
+
+
+.sns {
+  &__list {
+    display: grid;
+    row-gap: 30px;
+  }
+}

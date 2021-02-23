@@ -1,0 +1,24 @@
+<%
+  if (typeof pageGridItem === 'undefined') {
+    var pageGridItem = '';
+  }
+%>
+
+<button class="<%= pageGridItem %>gNavBtn" id="js-gNavBtn" type="button" onclick="gNavToggle()">
+  <span class="sr-only">グローバルナビゲーションの開閉ボタン</span>
+</button>
+
+
+<nav class="gNav">
+  <ul class="gNav__list">
+    <li class="gNav__item">
+      <a class="gNav__link" href="index.html">ホーム</a>
+    </li>
+    <li class="gNav__item">
+      <a class="gNav__link" href="company.html">会社概要</a>
+    </li>
+    <li class="gNav__item">
+      <a class="gNav__link" href="contact.html">お問い合わせ</a>
+    </li>
+  </ul>
+</nav>

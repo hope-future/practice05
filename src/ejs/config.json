@@ -2,5 +2,10 @@
   "description": "CSSグリッドで作成する。",
   "author": "山田 太郎",
   "copyright": "テスト",
-  "application_name": "希望"
+  "application_name": "希望",
+  "test": [
+    {"name": "test0"},
+    {"name": "test1"},
+    {"name": "test2"}
+  ]
 }

@@ -1,0 +1,24 @@
+<%
+  if (typeof pageGridItem === 'undefined') {
+    var pageGridItem = '';
+  }
+%>
+
+<div class="<%= pageGridItem %>hero">
+  <div class="hero__siteName en">CASUAL</div>
+
+  <figure class="hero__figure">
+    <img class="hero__image"
+      srcset="images/tent-orange750.png 750w,
+              images/tent-orange1074.png 1074w,
+              images/tent-orange2148.png 2148w,
+              images/tent-orange3222.png 3222w"
+
+      sizes="(max-width: 767px) 100vw,
+             (max-width: 1217px) 88vw,
+             (min-width: 1218px) 1074px"
+
+      src="images/tent-orange.jpg"
+      alt="写真：夜空の下のオレンジのテント">
+  </figure>
+</div><!-- /.hero -->

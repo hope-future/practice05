@@ -1,0 +1,11 @@
+// キャッチコピー
+
+@use "../../global" as g;
+
+
+.catch {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 20px;
+  color: g.$grayColor;
+}

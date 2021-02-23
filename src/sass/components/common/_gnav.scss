@@ -1,0 +1,97 @@
+// グローバルナビゲーション
+
+@use "../../global" as g;
+
+
+// グローバルナビゲーションボタン
+.gNavBtn {
+  border: none;
+  background-color: g.$mainColor;
+  cursor: pointer;
+  outline: none;
+  display: grid;
+  place-content: center;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 32px;
+    height: 4px;
+    background-color: g.$whiteColor;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &::before {
+    transform: translateY(-5px);
+
+    // グローバルナビゲーション・オープン
+    .is-gNavOpen & {
+      transform: translateY(2px) rotate(45deg);
+    }
+  }
+
+  &::after {
+    transform: translateY(5px);
+
+    // グローバルナビゲーション・オープン
+    .is-gNavOpen & {
+      transform: translateY(-2px) rotate(-45deg);
+    }
+  }
+}
+
+
+
+// ナビゲーションメニュー
+.gNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background-color: rgba(g.$blackColor, 0.8);
+  transform: scale(0);
+  transform-origin: right top;
+  transition: transform 0.5s;
+
+  // グローバルナビゲーション・オープン
+  .is-gNavOpen & {
+    transform: scale(1);
+  }
+
+  &__list {
+    display: grid;
+    justify-items: center;
+    row-gap: 50px;
+  }
+
+  &__link {
+    font-size: 18px;
+    color: g.$whiteColor;
+  }
+}
+
+
+
+// ページのスクロール禁止
+html.is-gNavOpen,
+html.is-gNavOpen body {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+// PC・Windows のスクロール表示
+@media (pointer: fine) and (hover: hover) {
+  html {
+    overflow-y: scroll;
+  }
+
+  html.is-gNavOpen,
+  html.is-gNavOpen body {
+    height: 100vh;
+  }
+}

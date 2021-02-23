@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('components/common/_head.ejs', {page_title: 'トップページ'}) %>
+
+
+<body class="top pageGrid">
+
+<%- include('components/common/_gnav.ejs', {pageGridItem: 'pageGrid__gNavBtn '}) %>
+
+<%- include('components/other/_hero-header.ejs', {pageGridItem:'pageGrid__heroHeader '}) %>
+
+
+<main class="pageGrid__main">
+  <section class="messageMedia messageMedia--black">
+    <figure class="messageMedia__figure">
+      <picture>
+        <source
+          srcset="images/tent-green472.png 472w,
+                  images/tent-green944.png 944w,
+                  images/tent-green1416.png 1416w"
+          sizes="(max-width: 767px) calc(100vw - 40px),
+                 (max-width: 1217px) calc((100vw - 144px) * 0.439),
+                 (min-width: 1218px) 472px">
+
+        <img class="messageMedia__image" src="images/tent-green.jpg" alt="写真：夜の緑のテント">
+      </picture>
+    </figure>
+
+    <div class="messageMedia__body">
+      <hgroup class="messageMedia__headingGroup">
+        <h2 class="messageMedia__heading">冒険をはじめる</h2>
+
+        <h3 class="messageMedia__subHeading en">Let's Start the Adventure</h3>
+      </hgroup>
+
+      <p class="messageMedia__text">冒険には準備が必要です。全部おまかせで行くもよし、道具を自分で揃えて楽しむのもよし、最小限の装備で世界各地のサイトを巡ってみるのも捨てがたい… などなど、好みのスタイルで楽しめるのもポイントです。</p>
+
+      <a class="messageMedia__more more" href="content.html">詳しく見る ＞＞＞</a>
+    </div><!-- /.messageMedia__body -->
+  </section>
+
+  <section class="messageMedia messageMedia--white">
+    <figure class="messageMedia__figure">
+      <img class="messageMedia__image" src="images/fire.jpg" alt="写真：焚き火">
+    </figure>
+
+    <div class="messageMedia__body">
+      <hgroup class="messageMedia__headingGroup">
+        <h2 class="messageMedia__heading">カジュアルに体験する</h2>
+
+        <h3 class="messageMedia__subHeading en">Casual Outdoor Experience</h3>
+      </hgroup>
+
+      <p class="messageMedia__text">近年はアウトドアを楽しむために必要なものが全部用意されたサイトやフィールドも増えています。わからないことは優しいガイドさんが教えてくれますので、アレもコレもカジュアルに体験できるのです。</p>
+
+      <a class="messageMedia__more more" href="content.html">詳しく見る ＞＞＞</a>
+    </div><!-- /.messageMedia__body -->
+  </section>
+</main>
+
+
+<%- include('components/common/_footer', {pageGridItem: 'pageGrid__footer '}) %>
+
+<%- include('components/common/_catch', {pageGridItem: 'pageGrid__catch '}) %>
+
+<%- include('components/common/_sns.ejs', {pageGridItem: 'pageGrid__sns '}) %>
+
+<%- include('components/common/_script') %>
+
+</body>
+</html>
